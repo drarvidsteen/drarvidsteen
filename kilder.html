@@ -7,32 +7,14 @@
     <meta name="description" content="Veterinary medicine" />
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!--Navigation bar-->
-    <nav class="shadow-low">
-        <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" id="overlay-button"><span></span></label>
-        <div id="menu">
-        <div >
-            <a href="index.html">
-            <img src="img/pb.jpg" alt="her skulle det vært et bilde"></a>
-        </div>
-        <h2>Arvid Steen</h2>
-        <h3>
-            Veterinær<br>Dr.med.vet<br>Allmenn spesialist produksjonsdyr - storfe<br>Nordøyane veterinærkontor
-        </h3>
-        <ul>
-            <li><a href="mjolkefeber.html">Praktisk forebygging av mjølkefeber</a></li>
-            <li><a href="subklinisk-ketose.html">Praktisk håndtering av skjult (subklinisk) ketose</a></li>
-        </ul>
-        <ul id="kilder">
-            <li ><a href="kilder.html">Veterinary<br>medicine<br>(kilder)</a></li>
-        </ul>
-    </div>
-    </nav>
-    <!--end of Navigation bar-->
+    <!--Navigation-->
+    <div id="nav-placeholder">
+	</div>
+    <!--end of Navigation-->
 
     <section class="container">
         <div class="left-half">
@@ -44,6 +26,18 @@
             </ul>
         </div>
     </section>
+        <!-----------nav ------------->
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("nav.html");
+            });
+    
+            function activate() {
+                var element = document.getElementById("about");
+                element.classList.add("active");
+            }
+        </script>
+        <!-----------end nav ------------->
 </body>
 
 
