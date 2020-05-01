@@ -91,6 +91,12 @@ p {
   padding: 8px;
   list-style-type: square;
 }
+.kildeliste li {
+  list-style-type: none;
+}
+.container a {
+  color: black;;
+}
 
 nav a {
   text-decoration: underline;
@@ -116,6 +122,17 @@ li a:hover,
 img {
   object-fit: contain;
   max-height: 80vh;
+}
+.karikatur {
+  height: 80vh;
+  object-fit: contain;
+  background-image: url(img/karikatur1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.karikatur:hover {
+  background-image: url(img/karikatur2.png);
 }
 
 .left-half,

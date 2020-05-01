@@ -13,7 +13,7 @@
 <body>
     <!--Navigation-->
     <div id="nav-placeholder">
-	</div>
+    </div>
     <!--end of Navigation-->
 
     <section class="container">
@@ -21,23 +21,38 @@
             <h1>
                 Kilder
             </h1>
-            <ul>
+           <ul class="kildeliste">
+                    <li><a href="https://www.merckvetmanual.com/">Merck Veterinary Manual</a></li>
+                    <li><a href="https://www.merckmanuals.com/professional">Merck Manual (professional):
+                        The Merck Manual of Diagnosis and Treatment Consultant</a></li>
+                    <li> <a href="https://www.vetinst.no/sykdom-og-agens">Sykdommer hos fisk og dyr, og zoonoser -
+                        Veterinærinstituttet</a></li>
+                    <li><a href="https://snl.no/giftige_planter">Giftige planter - Store norske leksikon</a></li>
+                    <li><a href="http://www.rolv.no/index.html">Urtekilden</a></li>
+                    <li><a href="https://www.felleskatalogen.no/medisin-vet/">Veterinærkatalogen</a></li>
+                    <li><a href="https://www.fass.se/LIF/startpage?userType=1">FASS - Djurläkemedel</a></li>
+                </ul>
                 
-            </ul>
+                
+               
+                
+                
+                
+                
         </div>
     </section>
-        <!-----------nav ------------->
-        <script>
-            $(function () {
-                $("#nav-placeholder").load("nav.html");
-            });
-    
-            function activate() {
-                var element = document.getElementById("about");
-                element.classList.add("active");
-            }
-        </script>
-        <!-----------end nav ------------->
+    <!-----------nav ------------->
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+
+        function activate() {
+            var element = document.getElementById("about");
+            element.classList.add("active");
+        }
+    </script>
+    <!-----------end nav ------------->
 </body>
 
 
