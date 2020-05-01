@@ -71,6 +71,11 @@ h5 {
   margin-bottom: 40px;
   font-size: 17px;
 }
+h6 {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
 
 p,
 .container li {
