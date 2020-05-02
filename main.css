@@ -122,10 +122,16 @@ li a:hover,
 #kilder {
   color: rgb(116, 114, 134);
 }
+.kildeliste li{
+  margin-left: -25px;
+}
+.kildeliste a:hover, .container a:hover{
+  color: rgb(0, 2, 112);
+}
 
 .container {
   margin-left: 240px;
-  padding: 150px 150px 0 150px;
+  padding: 150px;
   display: flex;
 }
 
@@ -169,7 +175,14 @@ img {
 /* Media Queries
 ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /*----------------------------------------------------widescreen------------------------------------------------------------------------------------*/
-@media (min-aspect-ratio: 16 / 9) {}
+@media (min-aspect-ratio: 16 / 9) {
+  #menu {
+    width: 30vw !important; 
+  }
+  #menu img {
+    width: 50%;
+  }
+}
 
 /*--------------------------------------------------------ipad---------------------------------------------------------------------------------------*/
 @media (max-aspect-ratio: 9 / 8) {
@@ -181,6 +194,7 @@ img {
     flex-direction: column;
     padding-bottom: 2rem;
     margin-left: 0;
+    padding: 120px 70px;
   }
 
   #menu img {
@@ -192,6 +206,7 @@ img {
   h1 {
     font-size: 80px;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   h2 {
@@ -214,12 +229,24 @@ img {
   .container li {
     max-width: 80vw;
     font-size: 26px;
+    padding: 0;
+  }
+  .container li {
+    padding-top: 10px;
   }
 
   nav a {
     font-size: 30px;
   }
-
+  .karikatur {
+    margin: 90px 0 0 0px;
+  }
+  .kildeliste li {
+    padding: 50px 0 0 0px;
+    margin-left: -15px;
+  }
+}
+  @media (max-aspect-ratio: 9 / 8), (min-aspect-ratio: 16 / 8) {
   /*---------------------------------------------------------------------------nav---------------------------------------------------------------------------------------*/
   /* Hide the nav */
   nav {
@@ -303,7 +330,6 @@ img {
   #overlay-button span:after {
     height: 8px;
     width: 70px;
-    /*border-radius: 4px;*/
     background-color: #00014D;
     -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -344,14 +370,12 @@ img {
     -webkit-box-shadow: -20px 20px 30px black;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
   }
-
-  /* Change menu item's width to 100% */
 }
 
 /* ----------------------------------------------------phone size ------------------------------------------------------------------*/
 @media (max-aspect-ratio: 6 / 8) {
   #menu {
-    width: 70vw;
+    width: 72vw;
   }
 
   h1 {
@@ -379,15 +403,46 @@ img {
     max-width: 90vw;
     font-size: 45px;
   }
+  .container li {
+    padding-top: 16px;
+  }
+  .kildeliste li {
+    padding: 70px 0 0 0;
+  }
 
   nav a {
     font-size: 44px;
   }
+  .karikatur {
+    margin: 70px 0 0 -11vw;
+  }
 
   #overlay-button {
     position: absolute;
-    left: 80vw;
+    left: 78vw;
     top: unset;
-    bottom: 0;
+    bottom: 100px;
+  }
+  #overlay-button span,
+  #overlay-button span:before,
+  #overlay-button span:after {
+    height: 16px;
+    width: 140px;
+  }
+  #overlay-button span:before {
+    top: -40px;
+  }
+
+  #overlay-button span:after {
+    top: 40px;
+  }
+  input[type=checkbox]:checked~#overlay-button span:before {
+    -webkit-transform: rotate(45deg) translate(29px, 29px);
+    transform: rotate(45deg) translate(29px, 29px);
+  }
+
+  input[type=checkbox]:checked~#overlay-button span:after {
+    -webkit-transform: rotate(-45deg) translate(29px, -29px);
+    transform: rotate(-45deg) translate(29px, -29px);
   }
 }
