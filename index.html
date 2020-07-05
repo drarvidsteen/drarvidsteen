@@ -13,7 +13,7 @@
 <body onload="activate()">
     <!--Navigation--------------------->
     <div id="nav-placeholder">
-	</div>
+    </div>
     <!--end of Navigation-------------->
 
     <section class="container">
@@ -22,9 +22,11 @@
                 Aktuelt stoff for bønder og veterinærer
             </h1>
             <p>
-                Under siden "<a href="mjolkefeber.html">Praktisk forebygging av mjølkefeber</a>" vil du finne forslag til hvordan mjølkefeber hos mjølkekyr 
+                Under siden "<a href="mjolkefeber.html">Praktisk forebygging av mjølkefeber</a>" vil du finne forslag
+                til hvordan mjølkefeber hos mjølkekyr
                 kan forebygges både på små og større garder, løsdrifter og båsfjøs. <br> <br>
-                Se også hvordan vi håndterer <a href="subklinisk-ketose.html">skjult (subklinisk) ketose</a> hos mjølkekyr på Nordøyane i Møre og Romsdal.
+                Se også hvordan vi håndterer <a href="subklinisk-ketose.html">skjult (subklinisk) ketose</a> hos
+                mjølkekyr på Nordøyane i Møre og Romsdal.
             </p>
         </div>
         <div class="right-half">
@@ -32,19 +34,27 @@
             </div>
         </div>
     </section>
+    <section class="container" style="padding-top: 0;">
+        <p> Du kan melde deg på  
+            <a id="mail" href="mailto:dr.arvid.steen?subject=Nyhetsbrev påmelding&body=Legg ved mailen din her: 
+            %0D%0A%0D%0AOm du ønsker å melde deg av, sender du bare en mail om det, så tar jeg deg av lista.">
+        nyhetsbrevet</a>
+             om du ønsker å bli oppdatert når det blir gjort endringer på siden. 
+        </p>
+    </section>
     <!-----------nav ------------->
     <script>
-		$(function () {
-			$("#nav-placeholder").load("nav.html");
-		});
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
 
-		function activate() {
-			var element = document.getElementById("about");
-			element.classList.add("active");
-		}
+        function activate() {
+            var element = document.getElementById("about");
+            element.classList.add("active");
+        }
     </script>
     <!-----------end nav ------------->
-</body> 
+</body>
 
 
 </html>

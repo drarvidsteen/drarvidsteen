@@ -38,6 +38,9 @@ nav {
 #menu img {
   width: 100%;
 }
+/*#mail {
+  padding-left: 20vw;
+}*/
 
 nav li {
   list-style: none;
@@ -48,6 +51,18 @@ nav li {
 
 .active {
   color: red;
+}
+footer{
+  padding: 200px;
+  background-color: rgb(0, 0, 22);
+  margin-left: 240px;
+  p, a {
+    font-size: 16px;
+    color: rgb(201, 201, 201);
+    a:hover {
+      color: blue;
+    }
+  }
 }
 
 h1 {
@@ -79,7 +94,7 @@ h4 {
 
 h5 {
   margin-bottom: 40px;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 h6 {
@@ -136,7 +151,7 @@ p, .container li {
 nav a {
   text-decoration: underline;
   color: lightgray;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 li a:hover {
@@ -151,13 +166,14 @@ li a:hover {
   color: rgb(116, 114, 134);
 }
 nav li {
-    transition: ease-in-out 0.4s;
+  padding: 4px;
+    transition: 0.0s;
     &:hover {
         margin-left: 15px;
     }
 }
 nav li:nth-child(3) {
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
 .kildeliste {
@@ -166,12 +182,12 @@ nav li:nth-child(3) {
   }
 
   a:hover {
-    color: rgb(0, 2, 112);
+    color: rgb(0, 3, 207);
   }
 }
 
 .container a:hover {
-  color: rgb(0, 2, 112);
+  color: rgb(0, 3, 207);
 }
 
 .formel {
@@ -308,6 +324,13 @@ img {
     margin-left: 0;
     padding: 120px 70px;
   }
+  footer{
+    margin-left: 0;
+    padding: 200px;
+    p, a{
+      font-size: 40px;
+    }
+  }
 
   #menu img {
     max-height: 50vw;
@@ -334,7 +357,7 @@ img {
   }
 
   h5 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h6 {
@@ -357,7 +380,7 @@ img {
   }
 
   nav a {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .karikatur {
@@ -560,36 +583,36 @@ img {
     position: absolute;
     left: 78vw;
     top: unset;
-    bottom: 100px;
+    bottom: 90px;
 
     span {
-      height: 16px;
-      width: 140px;
+      height: 12px;
+      width: 90px;
 
       &:before, &:after {
-        height: 16px;
-        width: 140px;
+        height: 12px;
+        width: 90px;
       }
 
       &:before {
-        top: -40px;
+        top: -25px;
       }
 
       &:after {
-        top: 40px;
+        top: 25px;
       }
     }
   }
 
   input[type=checkbox]:checked ~ #overlay-button span {
     &:before {
-      -webkit-transform: rotate(45deg) translate(29px, 29px);
-      transform: rotate(45deg) translate(29px, 29px);
+      -webkit-transform: rotate(45deg) translate(18px, 18px);
+      transform: rotate(45deg) translate(18px, 18px);
     }
 
     &:after {
-      -webkit-transform: rotate(-45deg) translate(29px, -29px);
-      transform: rotate(-45deg) translate(29px, -29px);
+      -webkit-transform: rotate(-45deg) translate(18px, -18px);
+      transform: rotate(-45deg) translate(18px, -18px);
     }
   }
 }

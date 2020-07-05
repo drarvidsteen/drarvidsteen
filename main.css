@@ -31,6 +31,9 @@ nav:hover {
   width: 100%;
 }
 
+/*#mail {
+  padding-left: 20vw;
+}*/
 nav li {
   list-style: none;
   font-family: 'Roboto', sans-serif;
@@ -40,6 +43,21 @@ nav li {
 
 .active {
   color: red;
+}
+
+footer {
+  padding: 200px;
+  background-color: #000016;
+  margin-left: 240px;
+}
+
+footer p, footer a {
+  font-size: 16px;
+  color: #c9c9c9;
+}
+
+footer p a:hover, footer a a:hover {
+  color: blue;
 }
 
 h1 {
@@ -71,7 +89,7 @@ h4 {
 
 h5 {
   margin-bottom: 40px;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 h6 {
@@ -124,7 +142,7 @@ p, .container li {
 nav a {
   text-decoration: underline;
   color: lightgray;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 li a:hover {
@@ -140,8 +158,9 @@ li a:hover {
 }
 
 nav li {
-  -webkit-transition: ease-in-out 0.4s;
-  transition: ease-in-out 0.4s;
+  padding: 4px;
+  -webkit-transition: 0.0s;
+  transition: 0.0s;
 }
 
 nav li:hover {
@@ -149,7 +168,7 @@ nav li:hover {
 }
 
 nav li:nth-child(3) {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .kildeliste li {
@@ -157,11 +176,11 @@ nav li:nth-child(3) {
 }
 
 .kildeliste a:hover {
-  color: #000270;
+  color: #0003cf;
 }
 
 .container a:hover {
-  color: #000270;
+  color: #0003cf;
 }
 
 .formel {
@@ -306,6 +325,13 @@ img {
     margin-left: 0;
     padding: 120px 70px;
   }
+  footer {
+    margin-left: 0;
+    padding: 200px;
+  }
+  footer p, footer a {
+    font-size: 40px;
+  }
   #menu img {
     max-height: 50vw;
     margin-bottom: 30px;
@@ -327,7 +353,7 @@ img {
     font-size: 40px;
   }
   h5 {
-    font-size: 24px;
+    font-size: 20px;
   }
   h6 {
     font-size: 22px;
@@ -344,7 +370,7 @@ img {
     padding-top: 10px;
   }
   nav a {
-    font-size: 30px;
+    font-size: 24px;
   }
   .karikatur {
     margin: 90px 0 0 0px;
@@ -510,29 +536,29 @@ img {
     position: absolute;
     left: 78vw;
     top: unset;
-    bottom: 100px;
+    bottom: 90px;
   }
   #overlay-button span {
-    height: 16px;
-    width: 140px;
+    height: 12px;
+    width: 90px;
   }
   #overlay-button span:before, #overlay-button span:after {
-    height: 16px;
-    width: 140px;
+    height: 12px;
+    width: 90px;
   }
   #overlay-button span:before {
-    top: -40px;
+    top: -25px;
   }
   #overlay-button span:after {
-    top: 40px;
+    top: 25px;
   }
   input[type=checkbox]:checked ~ #overlay-button span:before {
-    -webkit-transform: rotate(45deg) translate(29px, 29px);
-    transform: rotate(45deg) translate(29px, 29px);
+    -webkit-transform: rotate(45deg) translate(18px, 18px);
+    transform: rotate(45deg) translate(18px, 18px);
   }
   input[type=checkbox]:checked ~ #overlay-button span:after {
-    -webkit-transform: rotate(-45deg) translate(29px, -29px);
-    transform: rotate(-45deg) translate(29px, -29px);
+    -webkit-transform: rotate(-45deg) translate(18px, -18px);
+    transform: rotate(-45deg) translate(18px, -18px);
   }
 }
 /*# sourceMappingURL=main.css.map */
