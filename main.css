@@ -51,12 +51,14 @@ footer {
   margin-left: 240px;
 }
 
-footer p, footer a {
+footer p,
+footer a {
   font-size: 16px;
   color: #c9c9c9;
 }
 
-footer p a:hover, footer a a:hover {
+footer p a:hover,
+footer a a:hover {
   color: blue;
 }
 
@@ -76,7 +78,8 @@ h2 {
   padding-top: 60px;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-family: 'Roboto Condensed', 'Roboto', sans-serif;
   color: lightgray;
   font-weight: 400;
@@ -98,12 +101,14 @@ h6 {
   font-weight: 400;
 }
 
-p, .container li {
+p,
+.container li {
   font-size: 19px;
   font-family: 'Roboto', sans-serif;
 }
 
-p, .container li {
+p,
+.container li {
   max-width: 700px;
   margin-top: 8px;
 }
@@ -159,8 +164,8 @@ li a:hover {
 
 nav li {
   padding: 4px;
-  -webkit-transition: 0.0s;
-  transition: 0.0s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 nav li:hover {
@@ -217,7 +222,8 @@ img {
   background-image: url(img/karikatur2.png);
 }
 
-.left-half, .right-half {
+.left-half,
+.right-half {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +335,8 @@ img {
     margin-left: 0;
     padding: 200px;
   }
-  footer p, footer a {
+  footer p,
+  footer a {
     font-size: 40px;
   }
   #menu img {
@@ -358,7 +365,8 @@ img {
   h6 {
     font-size: 22px;
   }
-  p, .container li {
+  p,
+  .container li {
     max-width: 80vw;
     font-size: 26px;
     padding: 0;
@@ -371,6 +379,10 @@ img {
   }
   nav a {
     font-size: 24px;
+  }
+  nav li {
+    -webkit-transition: 0.0s;
+    transition: 0.0s;
   }
   .karikatur {
     margin: 90px 0 0 0px;
@@ -500,7 +512,8 @@ img {
     font-size: 100px;
     margin-top: 50px;
   }
-  h2, h4 {
+  h2,
+  h4 {
     font-size: 56px;
   }
   div h4 {
@@ -512,7 +525,8 @@ img {
   h6 {
     font-size: 35px;
   }
-  p, .container li {
+  p,
+  .container li {
     max-width: 90vw;
     font-size: 45px;
   }
